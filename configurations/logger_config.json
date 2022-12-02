@@ -1,0 +1,41 @@
+{
+    "version": 1,
+    "disable_existing_loggers": true,
+    "formatters": {
+        "simple": {
+            "format": "%(asctime)s %(hostname)s CEF: %(levelname)s | IMGMON - %(processName)s - %(threadName)s | 0.0.1 | %(name)s | %(message)s"
+        }
+    },
+
+    "handlers": {
+      "console": {
+            "class": "logging.StreamHandler",
+            "level": "DEBUG",
+            "formatter": "simple",
+            "filters": ["hostname_filter"],
+            "stream": "ext://sys.stdout"
+        },
+
+        "file_handler": {
+            "class": "logging.FileHandler",
+            "level": "DEBUG",
+            "formatter": "simple",
+            "filters": ["hostname_filter"],
+            "filename": "logs/acm.log",
+            "encoding": "utf8"
+        }
+    },
+
+    "loggers": {
+        "my_module": {
+            "level": "DEBUG",
+            "handlers": ["console"],
+            "propagate": "no"
+        }
+    },
+    "root": {
+        "level": "DEBUG",
+        "handlers": ["console", "file_handler"]
+    }
+}
+
