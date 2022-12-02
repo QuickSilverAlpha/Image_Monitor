@@ -2,7 +2,7 @@
 Vulnerable images leading to Supply Chain Attacks
 
 
-***Instructions***
+**Instructions**
 
 Explore the solution (marked for FURTHER EXPLORATION) in more detail with the same group. Describe your solution/results (~5 pages) Sections: Abstract, Introduction (with Motivation), Background, Threat Model, Design, Implementation, Evaluation, Related Solutions, Conclusion, References
 
