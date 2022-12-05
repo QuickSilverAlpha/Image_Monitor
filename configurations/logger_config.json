@@ -21,7 +21,7 @@
             "level": "DEBUG",
             "formatter": "simple",
             "filters": ["hostname_filter"],
-            "filename": "logs/acm.log",
+            "filename": "logs/img_mon.log",
             "encoding": "utf8"
         }
     },
