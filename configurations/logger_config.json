@@ -33,6 +33,7 @@
             "propagate": "no"
         }
     },
+  
     "root": {
         "level": "DEBUG",
         "handlers": ["console", "file_handler"]
