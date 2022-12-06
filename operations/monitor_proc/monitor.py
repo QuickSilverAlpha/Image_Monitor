@@ -1,6 +1,7 @@
 # Python3.6
 # Author(s): Rohan Ahuja
 # Reference: https://www.linode.com/docs/guides/monitor-filesystem-events-with-pyinotify/
+
 import copy
 import glob
 import os.path
@@ -56,9 +57,12 @@ class monitor(object):
                     checksum = self.compute_checksum(file)
 
                     if self.denylist.get(checksum, None):
-                        self.logger.critical("DENYLISTED IMAGE FOUND {}. INITIATING MOVE!")
+                        self.logger.critical("DENYLISTED IMAGE FOUND {}. INITIATING PA!")
                         json_msg = copy.deepcopy(constants().pa_json_message_malicious)
                         json_msg["path"] = file
+
+                        # Dispatch message to protection action process queue
+                        self.logger.info("Dispatching event to PA process to take relevant action!")
                         self.dispatch_msg_to_pa(json_msg)
         except:
             self.logger.error("Failed to check the files against denylist!", exc_info=True)
@@ -110,24 +114,32 @@ def event_monitor(cls, method, pa_queue, pa_lock, pa_event):
 
             # Handling events and dispatching them to protection process for protection actions
 
+            # Handle folder delete scenarios
             if event.maskname == "IN_DELETE|IN_ISDIR":
                 logger.critical("SOMETHING IS FISHY! DIRECTORY {} DELETED!".format(event.pathname))
 
+            # Handle file delete scenarios
             elif event.maskname == "IN_DELETE":
                 logger.critical("SOMETHING IS FISHY! ALLOWED IMAGE {} DELETED!".format(event.pathname))
 
+            # Handle scenarios around files moved to the monitored folders
             elif event.maskname == "IN_MOVED_TO":
                 logger.critical("UNIDENTIFIED FILE MOVED TO THE MONITORED FOLDER: {}".format(event.pathname))
                 json_msg = constants().pa_json_message_quarantine
                 json_msg["path"] = event.pathname
+
+                # Dispatch message to protection action process queue
                 logger.info("Dispatching event to PA process to take relevant action!")
                 monitor(pa_queue, pa_lock, pa_event).dispatch_msg_to_pa(json_msg)
 
-            elif event.maskname == "IN_CLOSE_WRITE" or event.maskname == "IN_CLOSE_NOWRITE":
+            # Handle event on the file close after write. Not considering the IN_CLOSE_NOWRITE
+            elif event.maskname == "IN_CLOSE_WRITE":
                 logger.critical("UNIDENTIFIED FILE CREATED/ MODIFIED IN THE MONITORED FOLDER: {}".
                                 format(event.pathname))
                 json_msg = constants().pa_json_message_quarantine
                 json_msg["path"] = event.pathname
+
+                # Dispatch message to protection action process queue
                 logger.info("Dispatching event to PA process to take relevant action!")
                 monitor(pa_queue, pa_lock, pa_event).dispatch_msg_to_pa(json_msg)
 
