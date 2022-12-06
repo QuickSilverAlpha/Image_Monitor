@@ -1,1 +1,79 @@
-2022-12-02 12:12:25,282 ubuntu CEF: INFO | IMGMON - MainProcess - MainThread | 0.0.1 | operations.img_monitor_operations | Initiating Operations!
+2022-12-05 22:35:34,115 ubuntu CEF: INFO | IMGMON - MainProcess - MainThread | 0.0.1 | operations.img_monitor_operations | Initiating img_mon processes!
+2022-12-05 22:35:34,121 ubuntu CEF: INFO | IMGMON - MainProcess - MainThread | 0.0.1 | operations.img_monitor_operations | Initiating the monitoring process!
+2022-12-05 22:35:34,122 ubuntu CEF: INFO | IMGMON - MainProcess - MainThread | 0.0.1 | utils.global_func | Fetching path of the folder to be monitored!
+2022-12-05 22:35:34,122 ubuntu CEF: INFO | IMGMON - MainProcess - MainThread | 0.0.1 | utils.global_func | Watched folder path: /var/lib/docker
+2022-12-05 22:35:34,122 ubuntu CEF: INFO | IMGMON - MainProcess - MainThread | 0.0.1 | operations.monitor_proc.monitor | Checking existing files against deny list!
+2022-12-05 22:35:34,122 ubuntu CEF: INFO | IMGMON - MainProcess - MainThread | 0.0.1 | operations.monitor_proc.monitor | Successfully initiated monitor process!
+2022-12-05 22:35:34,122 ubuntu CEF: INFO | IMGMON - MainProcess - MainThread | 0.0.1 | operations.img_monitor_operations | Initiating the protection process!
+2022-12-05 22:35:34,122 ubuntu CEF: INFO | IMGMON - MainProcess - MainThread | 0.0.1 | operations.pa_proc.pa_process | Successfully initiated pa process process!
+2022-12-05 22:35:34,130 ubuntu CEF: INFO | IMGMON - protection_process - MainThread | 0.0.1 | operations.pa_proc.pa_process | Protection Action process waiting for messages to act!
+2022-12-05 22:36:29,642 ubuntu CEF: INFO | IMGMON - img_mon_process - MainThread | 0.0.1 | operations.monitor_proc.monitor | Method name: process_IN_CREATE() Path name: /var/lib/docker/hey Event Name: IN_CREATE
+2022-12-05 22:36:29,642 ubuntu CEF: INFO | IMGMON - img_mon_process - MainThread | 0.0.1 | operations.monitor_proc.monitor | Method name: process_IN_OPEN() Path name: /var/lib/docker/hey Event Name: IN_OPEN
+2022-12-05 22:36:29,642 ubuntu CEF: INFO | IMGMON - img_mon_process - MainThread | 0.0.1 | operations.monitor_proc.monitor | Method name: process_IN_ATTRIB() Path name: /var/lib/docker/hey Event Name: IN_ATTRIB
+2022-12-05 22:36:29,642 ubuntu CEF: INFO | IMGMON - img_mon_process - MainThread | 0.0.1 | operations.monitor_proc.monitor | Method name: process_IN_CLOSE_WRITE() Path name: /var/lib/docker/hey Event Name: IN_CLOSE_WRITE
+2022-12-05 22:37:23,822 ubuntu CEF: INFO | IMGMON - img_mon_process - MainThread | 0.0.1 | operations.monitor_proc.monitor | Method name: process_IN_OPEN() Path name: /var/lib/docker Event Name: IN_OPEN|IN_ISDIR
+2022-12-05 22:37:23,823 ubuntu CEF: INFO | IMGMON - img_mon_process - MainThread | 0.0.1 | operations.monitor_proc.monitor | Method name: process_IN_ACCESS() Path name: /var/lib/docker Event Name: IN_ACCESS|IN_ISDIR
+2022-12-05 22:37:23,823 ubuntu CEF: INFO | IMGMON - img_mon_process - MainThread | 0.0.1 | operations.monitor_proc.monitor | Method name: process_IN_CLOSE_NOWRITE() Path name: /var/lib/docker Event Name: IN_CLOSE_NOWRITE|IN_ISDIR
+2022-12-05 22:37:23,823 ubuntu CEF: INFO | IMGMON - img_mon_process - MainThread | 0.0.1 | operations.monitor_proc.monitor | Method name: process_IN_OPEN() Path name: /var/lib/docker Event Name: IN_OPEN|IN_ISDIR
+2022-12-05 22:37:23,823 ubuntu CEF: INFO | IMGMON - img_mon_process - MainThread | 0.0.1 | operations.monitor_proc.monitor | Method name: process_IN_ACCESS() Path name: /var/lib/docker Event Name: IN_ACCESS|IN_ISDIR
+2022-12-05 22:37:23,823 ubuntu CEF: INFO | IMGMON - img_mon_process - MainThread | 0.0.1 | operations.monitor_proc.monitor | Method name: process_IN_CLOSE_NOWRITE() Path name: /var/lib/docker Event Name: IN_CLOSE_NOWRITE|IN_ISDIR
+2022-12-05 22:37:24,335 ubuntu CEF: INFO | IMGMON - img_mon_process - MainThread | 0.0.1 | operations.monitor_proc.monitor | Method name: process_IN_OPEN() Path name: /var/lib/docker Event Name: IN_OPEN|IN_ISDIR
+2022-12-05 22:37:24,335 ubuntu CEF: INFO | IMGMON - img_mon_process - MainThread | 0.0.1 | operations.monitor_proc.monitor | Method name: process_IN_ACCESS() Path name: /var/lib/docker Event Name: IN_ACCESS|IN_ISDIR
+2022-12-05 22:37:24,335 ubuntu CEF: INFO | IMGMON - img_mon_process - MainThread | 0.0.1 | operations.monitor_proc.monitor | Method name: process_IN_CLOSE_NOWRITE() Path name: /var/lib/docker Event Name: IN_CLOSE_NOWRITE|IN_ISDIR
+2022-12-05 22:37:24,335 ubuntu CEF: INFO | IMGMON - img_mon_process - MainThread | 0.0.1 | operations.monitor_proc.monitor | Method name: process_IN_OPEN() Path name: /var/lib/docker Event Name: IN_OPEN|IN_ISDIR
+2022-12-05 22:37:24,335 ubuntu CEF: INFO | IMGMON - img_mon_process - MainThread | 0.0.1 | operations.monitor_proc.monitor | Method name: process_IN_ACCESS() Path name: /var/lib/docker Event Name: IN_ACCESS|IN_ISDIR
+2022-12-05 22:37:24,336 ubuntu CEF: INFO | IMGMON - img_mon_process - MainThread | 0.0.1 | operations.monitor_proc.monitor | Method name: process_IN_CLOSE_NOWRITE() Path name: /var/lib/docker Event Name: IN_CLOSE_NOWRITE|IN_ISDIR
+2022-12-05 22:37:29,085 ubuntu CEF: INFO | IMGMON - img_mon_process - MainThread | 0.0.1 | operations.monitor_proc.monitor | Method name: process_IN_DELETE() Path name: /var/lib/docker/hey Event Name: IN_DELETE
+2022-12-05 22:37:29,086 ubuntu CEF: CRITICAL | IMGMON - img_mon_process - MainThread | 0.0.1 | operations.monitor_proc.monitor | SOMETHING IS FISHY! ALLOWED IMAGE /var/lib/docker/hey DELETED!
+2022-12-05 22:38:35,863 ubuntu CEF: INFO | IMGMON - img_mon_process - MainThread | 0.0.1 | operations.monitor_proc.monitor | Method name: process_IN_MOVED_TO() Path name: /var/lib/docker/test Event Name: IN_MOVED_TO
+2022-12-05 22:38:35,863 ubuntu CEF: CRITICAL | IMGMON - img_mon_process - MainThread | 0.0.1 | operations.monitor_proc.monitor | UNIDENTIFIED FILE MOVED TO THE MONITORED FOLDER: /var/lib/docker/test
+2022-12-05 22:38:35,864 ubuntu CEF: INFO | IMGMON - img_mon_process - MainThread | 0.0.1 | operations.monitor_proc.monitor | Dispatching event to PA process to take relevant action!
+2022-12-05 22:38:35,865 ubuntu CEF: INFO | IMGMON - img_mon_process - MainThread | 0.0.1 | utils.global_func | Fetching path of the folder to be monitored!
+2022-12-05 22:38:35,865 ubuntu CEF: INFO | IMGMON - img_mon_process - MainThread | 0.0.1 | utils.global_func | Watched folder path: /var/lib/docker
+2022-12-05 22:38:35,865 ubuntu CEF: INFO | IMGMON - img_mon_process - MainThread | 0.0.1 | operations.monitor_proc.monitor | Checking existing files against deny list!
+2022-12-05 22:38:35,865 ubuntu CEF: INFO | IMGMON - img_mon_process - MainThread | 0.0.1 | operations.monitor_proc.monitor | Successfully initiated monitor process!
+2022-12-05 22:38:35,866 ubuntu CEF: INFO | IMGMON - img_mon_process - MainThread | 0.0.1 | operations.monitor_proc.monitor | Enqueuing message to PA queue!
+2022-12-05 22:38:35,866 ubuntu CEF: DEBUG | IMGMON - img_mon_process - MainThread | 0.0.1 | operations.monitor_proc.monitor | Acquiring lock on PA queue to enqueue!
+2022-12-05 22:38:35,869 ubuntu CEF: DEBUG | IMGMON - img_mon_process - MainThread | 0.0.1 | operations.monitor_proc.monitor | Enqueue successful! Releasing lock on PA queue!
+2022-12-05 22:38:35,870 ubuntu CEF: DEBUG | IMGMON - img_mon_process - MainThread | 0.0.1 | operations.monitor_proc.monitor | Signalling PA process!
+2022-12-05 22:38:35,870 ubuntu CEF: INFO | IMGMON - protection_process - MainThread | 0.0.1 | operations.pa_proc.pa_process | Received signal! Initiating protection action!
+2022-12-05 22:38:35,870 ubuntu CEF: INFO | IMGMON - protection_process - MainThread | 0.0.1 | operations.pa_proc.pa_process | De-queuing from the pa internal queue!
+2022-12-05 22:38:35,870 ubuntu CEF: DEBUG | IMGMON - protection_process - MainThread | 0.0.1 | operations.pa_proc.pa_process | Acquiring lock on pa internal queue to de-queue!
+2022-12-05 22:38:35,875 ubuntu CEF: DEBUG | IMGMON - protection_process - MainThread | 0.0.1 | operations.pa_proc.pa_process | De-queue done! Releasing lock on pa internal queue!
+2022-12-05 22:38:35,878 ubuntu CEF: DEBUG | IMGMON - protection_process - MainThread | 0.0.1 | operations.pa_proc.pa_process | {'type': 'quarantine', 'path': '/var/lib/docker/test'}
+2022-12-05 22:38:35,878 ubuntu CEF: INFO | IMGMON - protection_process - MainThread | 0.0.1 | operations.pa_proc.pa_process | Executing protection action!
+2022-12-05 22:38:35,880 ubuntu CEF: INFO | IMGMON - protection_process - MainThread | 0.0.1 | utils.global_func | Fetching path of the protection action script!
+2022-12-05 22:38:35,880 ubuntu CEF: INFO | IMGMON - protection_process - MainThread | 0.0.1 | utils.global_func | PA script path: operations/pa_proc/pa_scripts/exec_pa.sh
+2022-12-05 22:38:35,894 ubuntu CEF: INFO | IMGMON - img_mon_process - MainThread | 0.0.1 | operations.monitor_proc.monitor | Method name: process_IN_MOVED_FROM() Path name: /var/lib/docker/test Event Name: IN_MOVED_FROM
+2022-12-05 22:38:35,896 ubuntu CEF: INFO | IMGMON - protection_process - MainThread | 0.0.1 | operations.pa_proc.pa_process | [PA SCRIPT]: Moving file from /var/lib/docker/test to /home/rahuja/Exclusive/NYU/isp/Image_Monitor/pa/quarantine
+Move complete
+
+2022-12-05 22:38:35,896 ubuntu CEF: INFO | IMGMON - protection_process - MainThread | 0.0.1 | operations.pa_proc.pa_process | Successfully executed the PA!
+2022-12-05 22:38:35,897 ubuntu CEF: INFO | IMGMON - protection_process - MainThread | 0.0.1 | operations.pa_proc.pa_process | All the messages processed successfully! Going back to wait state!
+2022-12-05 22:39:07,552 ubuntu CEF: INFO | IMGMON - img_mon_process - MainThread | 0.0.1 | operations.monitor_proc.monitor | Method name: process_IN_OPEN() Path name: /var/lib/docker Event Name: IN_OPEN|IN_ISDIR
+2022-12-05 22:39:07,552 ubuntu CEF: INFO | IMGMON - img_mon_process - MainThread | 0.0.1 | operations.monitor_proc.monitor | Method name: process_IN_ACCESS() Path name: /var/lib/docker Event Name: IN_ACCESS|IN_ISDIR
+2022-12-05 22:39:07,553 ubuntu CEF: INFO | IMGMON - img_mon_process - MainThread | 0.0.1 | operations.monitor_proc.monitor | Method name: process_IN_CLOSE_NOWRITE() Path name: /var/lib/docker Event Name: IN_CLOSE_NOWRITE|IN_ISDIR
+2022-12-05 22:49:31,517 ubuntu CEF: INFO | IMGMON - img_mon_process - MainThread | 0.0.1 | operations.monitor_proc.monitor | Method name: process_IN_MOVED_TO() Path name: /var/lib/docker/test1 Event Name: IN_MOVED_TO
+2022-12-05 22:49:31,517 ubuntu CEF: CRITICAL | IMGMON - img_mon_process - MainThread | 0.0.1 | operations.monitor_proc.monitor | UNIDENTIFIED FILE MOVED TO THE MONITORED FOLDER: /var/lib/docker/test1
+2022-12-05 22:49:31,517 ubuntu CEF: INFO | IMGMON - img_mon_process - MainThread | 0.0.1 | operations.monitor_proc.monitor | Dispatching event to PA process to take relevant action!
+2022-12-05 22:49:31,522 ubuntu CEF: INFO | IMGMON - img_mon_process - MainThread | 0.0.1 | utils.global_func | Fetching path of the folder to be monitored!
+2022-12-05 22:49:31,522 ubuntu CEF: INFO | IMGMON - img_mon_process - MainThread | 0.0.1 | utils.global_func | Watched folder path: /var/lib/docker
+2022-12-05 22:49:31,522 ubuntu CEF: INFO | IMGMON - img_mon_process - MainThread | 0.0.1 | operations.monitor_proc.monitor | Checking existing files against deny list!
+2022-12-05 22:49:31,522 ubuntu CEF: INFO | IMGMON - img_mon_process - MainThread | 0.0.1 | operations.monitor_proc.monitor | Successfully initiated monitor process!
+2022-12-05 22:49:31,522 ubuntu CEF: INFO | IMGMON - img_mon_process - MainThread | 0.0.1 | operations.monitor_proc.monitor | Enqueuing message to PA queue!
+2022-12-05 22:49:31,522 ubuntu CEF: DEBUG | IMGMON - img_mon_process - MainThread | 0.0.1 | operations.monitor_proc.monitor | Acquiring lock on PA queue to enqueue!
+2022-12-05 22:49:31,523 ubuntu CEF: DEBUG | IMGMON - img_mon_process - MainThread | 0.0.1 | operations.monitor_proc.monitor | Enqueue successful! Releasing lock on PA queue!
+2022-12-05 22:49:31,524 ubuntu CEF: DEBUG | IMGMON - img_mon_process - MainThread | 0.0.1 | operations.monitor_proc.monitor | Signalling PA process!
+2022-12-05 22:49:31,527 ubuntu CEF: INFO | IMGMON - protection_process - MainThread | 0.0.1 | operations.pa_proc.pa_process | De-queuing from the pa internal queue!
+2022-12-05 22:49:31,527 ubuntu CEF: DEBUG | IMGMON - protection_process - MainThread | 0.0.1 | operations.pa_proc.pa_process | Acquiring lock on pa internal queue to de-queue!
+2022-12-05 22:49:31,528 ubuntu CEF: DEBUG | IMGMON - protection_process - MainThread | 0.0.1 | operations.pa_proc.pa_process | De-queue done! Releasing lock on pa internal queue!
+2022-12-05 22:49:31,529 ubuntu CEF: DEBUG | IMGMON - protection_process - MainThread | 0.0.1 | operations.pa_proc.pa_process | {'type': 'quarantine', 'path': '/var/lib/docker/test1'}
+2022-12-05 22:49:31,529 ubuntu CEF: INFO | IMGMON - protection_process - MainThread | 0.0.1 | operations.pa_proc.pa_process | Executing protection action!
+2022-12-05 22:49:31,530 ubuntu CEF: INFO | IMGMON - protection_process - MainThread | 0.0.1 | utils.global_func | Fetching path of the protection action script!
+2022-12-05 22:49:31,531 ubuntu CEF: INFO | IMGMON - protection_process - MainThread | 0.0.1 | utils.global_func | PA script path: operations/pa_proc/pa_scripts/exec_pa.sh
+2022-12-05 22:49:31,548 ubuntu CEF: INFO | IMGMON - img_mon_process - MainThread | 0.0.1 | operations.monitor_proc.monitor | Method name: process_IN_MOVED_FROM() Path name: /var/lib/docker/test1 Event Name: IN_MOVED_FROM
+2022-12-05 22:49:31,550 ubuntu CEF: INFO | IMGMON - protection_process - MainThread | 0.0.1 | operations.pa_proc.pa_process | [PA SCRIPT]: Moving file from /var/lib/docker/test1 to /home/rahuja/Exclusive/NYU/isp/Image_Monitor/pa/quarantine
+Move complete
+
+2022-12-05 22:49:31,550 ubuntu CEF: INFO | IMGMON - protection_process - MainThread | 0.0.1 | operations.pa_proc.pa_process | Successfully executed the PA!
+2022-12-05 22:49:31,550 ubuntu CEF: INFO | IMGMON - protection_process - MainThread | 0.0.1 | operations.pa_proc.pa_process | All the messages processed successfully! Going back to wait state!
