@@ -65,8 +65,8 @@ if __name__ == '__main__':
         logger_config_file_path = os.path.join(os.getcwd() + "/configurations/" + logger_file_name)
         setup_logging(logger_config_file_path)
 
-        # Initiate Operations
-        img_monitor_operations()
+        # Initiate IMGMON Operations
+        img_monitor_operations().init_image_mon()
 
     except:
         traceback.print_exc()

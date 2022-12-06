@@ -4,4 +4,4 @@
 **/*.bkp
 build
 dist
-
+*.log
