@@ -1,5 +1,5 @@
 # Image_Monitor
-Vulnerable images leading to Supply Chain Attacks
+Deterministic and scalable solution for vulnerable images leading to Supply Chain Attacks
 
 
 **Instructions**
