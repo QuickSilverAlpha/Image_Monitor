@@ -22,7 +22,7 @@ One method that cybercriminals have used to exploit software supply chains has b
 discretely inserting malicious container images into registries or injecting malicious code directly
 into vulnerable container images.
 
-The objective of this paper is to elaborate on the threats associated with vulnerable container
+The objective of this project is to elaborate on the threats associated with vulnerable container
 images and the risks they impose. Research focused on the illegal modification of container images
 within a registry and different methods to secure the various images. The solution to be detailed is a
 Python based image monitoring system.
